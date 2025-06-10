@@ -1,6 +1,6 @@
-# 🌐 Express Portfolio Website – Assignment 1 (COMP 2068)
+# 🌐 Express Portfolio Website
 
-Welcome to my personal developer portfolio built with **Node.js**, **Express.js**, and **Handlebars (HBS)**. This project showcases my academic journey, technical skills, and real-world projects as part of Assignment 1 for the course **COMP 2068: JavaScript Frameworks**.
+Welcome to my personal developer portfolio built with **Node.js**, **Express.js**, and **Handlebars (HBS)**. This project showcases my academic journey, technical skills, and real-world projects as part of JavaScript Frameworks**.
 
 ---
 
@@ -39,8 +39,8 @@ assignment1/
 
 ## 🔗 Live Link
 
-🌍 [View Deployed Site on Render](https://your-render-link.onrender.com)  
-*(Update this after deploying)*
+🌍 [View Deployed Site on Render](https://myportfolio-dp9b.onrender.com)
+
 
 ---
 
