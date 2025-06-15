@@ -10,13 +10,46 @@ h1, h2, h3 {
   color: #343a40;
 }
 
-/* ===== CARD SHADOWS ===== */
+/* ===== CARD LAYOUT & HOVERS ===== */
 .card {
+  display: flex;
+  flex-direction: column;
   transition: transform 0.2s ease-in-out;
 }
-
 .card:hover {
   transform: scale(1.02);
+}
+
+/* ===== CARD IMAGE CONTAIN FULL CONTENT ===== */
+.card-img-top {
+  width: 100%;
+  height: 30vh;              /* Adjust base size as needed */
+  object-fit: contain;       /* Show full image without cropping */ /* :contentReference[oaicite:1]{index=1} */
+  background-color: #e9ecef; /* Optional placeholder for letterboxing */
+}
+
+/* ===== RESPONSIVE IMAGE HEIGHT ===== */
+@media (min-width: 576px) { .card-img-top { height: 35vh; } }
+@media (min-width: 768px) { .card-img-top { height: 40vh; } }
+@media (min-width: 992px) { .card-img-top { height: 45vh; } }
+@media (min-width: 1200px) { .card-img-top { height: 50vh; } }
+
+/* ===== FLEX LAYOUT FOR TEXT & FOOTER CONSISTENCY ===== */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-text {
+  flex-grow: 1;
+}
+.card-footer {
+  margin-top: auto;
+}
+
+/* ===== UNIFORM CARD HEIGHT IN GRID ===== */
+.row.row-cols-1.row-cols-md-3.g-4 {
+  align-items: stretch;
 }
 
 /* ===== FORM SPACING ===== */
